@@ -77,13 +77,13 @@ async def newlatlon (msg , movementHead):
  heading=(msg.hdg)/100
  lati=math.radians((msg.lat)/10000000)
  longi=math.radians((msg.lon)/10000000)
- na = (6378137*6378137*math.cos(lati))
- nb = (6356753*6356753*math.sin(lati))
- da = (6378137*math.cos(lati))
- db = (6356753*math.sin(lati))
- rade = math.sqrt(((na*na)+(nb*nb))/((da*da)+(db*db)))
- AD = 1/rade
- newheading = math.radians (heading - movementHead)
+ na = (6378137*6378137*math.cos(lati)) #numerator
+ nb = (6356753*6356753*math.sin(lati)) #numerator
+ da = (6378137*math.cos(lati))#denominator
+ db = (6356753*math.sin(lati))#denominator 
+ rade = math.sqrt(((na*na)+(nb*nb))/((da*da)+(db*db))) #calculates earths radius
+ AD = 1/rade #angular distance
+ newheading = math.radians (heading + movementHead)
  newlati =math.asin(math.sin(lati)*math.cos(AD) + math.cos(lati)*math.sin(AD)*math.cos(newheading))
  newlongi = longi + math.atan2(math.sin(newheading)*math.sin(AD)*math.cos(lati), math.cos(AD)-math.sin(lati)*math.sin(newlati))
  return math.degrees(newlati*10000000),math.degrees(newlongi*10000000)
