@@ -86,4 +86,4 @@ baud = 921600
 
 On SITL:
 
-connection string = 'udpin = localhost:14550/14551' 
+connection string = 'udpin:localhost:14550/14551' 
