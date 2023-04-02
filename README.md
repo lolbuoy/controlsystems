@@ -31,6 +31,10 @@ Requirements:
   
   https://www.youtube.com/watch?v=kAli2y2-n-M
   
+  for this section please follow the video link :
+  
+  https://www.youtube.com/watch?v=4B8BVskH0vc
+  
   From ardupilot directory :
 
       Tools/environment_install/install-prereqs-ubuntu.sh -y
