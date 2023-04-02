@@ -22,6 +22,12 @@ Requirements:
    
    then clone the ardupilot rep:
    `git clone https://github.com/your-github-userid/ardupilot
+    
+    
     cd ardupilot
+    
+    
+    
+    
     git submodule update --init --recursive`
 ii) Pymavlink installed on your machine
