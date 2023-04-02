@@ -43,4 +43,10 @@ Reload the path (log-out and log-in to make permanent):
 
       . ~/.profile
  
+If there have been updates to some git submodules you may need to do a full clean build. To do that use:
+
+      ./waf clean
+
+that will remove the build artifacts so you can do a build from scratch
+
 ii) Pymavlink installed on your machine
