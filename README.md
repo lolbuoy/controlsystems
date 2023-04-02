@@ -67,8 +67,14 @@ on UAV use :
 
 "USB-TTL" connector
 
-run 
+on pixhawk side :
+
+'serial2_baud = 921600 '
+
+run :
 
 ` ls /dev/tty* `
 
 connection string = /dev/ttyUSBx
+
+baud = 921600 
