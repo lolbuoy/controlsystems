@@ -67,9 +67,12 @@ on UAV use :
 
 "USB-TTL" connector
 
+
 on pixhawk side :
 
 'serial2_baud = 921600 '
+
+when connections from telem2 port to the usb ttl is correct ; a faint led on the rx pin of USB-TTL will start blinking . Make sure your usb-ttl cable is connected to your OBC
 
 run :
 
@@ -78,3 +81,9 @@ run :
 connection string = /dev/ttyUSBx
 
 baud = 921600 
+
+
+
+On SITL:
+
+connection string = 'udpin = localhost:14550/14551' 
