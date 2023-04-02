@@ -59,3 +59,16 @@ Start SITL simulator :
 ii) Pymavlink installed on your machine :
 
       pip install --upgrade pymavlink MAVProxy --user
+
+
+General Connections :
+
+on UAV use :
+
+"USB-TTL" connector
+
+run 
+
+` ls /dev/tty* `
+
+connection string = /dev/ttyUSBx
