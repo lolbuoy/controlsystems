@@ -49,4 +49,13 @@ If there have been updates to some git submodules you may need to do a full clea
 
 that will remove the build artifacts so you can do a build from scratch
 
-ii) Pymavlink installed on your machine
+Start SITL simulator :
+
+      cd ardupilot/Tools/autotest
+      
+      python sim_vehicle.py -v ArduCopter --map --console
+
+
+ii) Pymavlink installed on your machine :
+
+      pip install --upgrade pymavlink MAVProxy --user
