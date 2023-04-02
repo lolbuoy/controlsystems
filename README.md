@@ -27,6 +27,16 @@ Requirements:
       cd ardupilot
     
       git submodule update --init --recursive
+  video reference:
+  
+  https://www.youtube.com/watch?v=kAli2y2-n-M
+  
+  From ardupilot directory :
 
+      Tools/environment_install/install-prereqs-ubuntu.sh -y
 
+Reload the path (log-out and log-in to make permanent):
+
+      . ~/.profile
+ 
 ii) Pymavlink installed on your machine
