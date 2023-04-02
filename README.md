@@ -1,5 +1,10 @@
 # controlsystems
+
 code used to command the autopilot thru a companion computer based on external i/ps or other functions
 Requirements:
-i) Ardupilot code setup on your linux machine 
+i) Ardupilot code setup on your linux machine :
+make sure you have 'git' ; if not follow the below :
+    sudo apt-get update
+    sudo apt-get install git
+
 ii) Pymavlink installed on your machine
